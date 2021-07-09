@@ -8,6 +8,7 @@
 
 body {
     font-family: Helvetica, sans-serif;
+    font-size: 14px;
     line-height: 1.4;
     color: #333;
     overflow-x: hidden;
@@ -191,8 +192,11 @@ body {
   
   /* Create four equal columns that floats next to each other */
   .column {
-    display: inline;
-    width: 30%;
+    display: inline-block;
+    justify-content: center;
+    margin: auto;
+    width: 20%;
+    height: 40%;
   }
   
   /* Clear floats after rows */
@@ -205,8 +209,10 @@ body {
   /* Content */
   .content {
     background-color: rgb(0, 0, 0);
-    padding: 20px;
+    padding: 30px;
+    margin: auto;
   }
+
 
   /* Contact Area */
 #contact {
@@ -224,6 +230,10 @@ body {
     font-size: 2.5rem;
     margin: 3rem 0;
     margin-top: 5rem;
+}
+
+#contact a {
+    color: #fff;
 }
 
 #contact .form-box {
